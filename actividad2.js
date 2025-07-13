@@ -5,11 +5,13 @@
 */
 
 /*
-EJERCICIO 1 
+EJERCICIO 1:
+  Crear una función que en base a la edad que ingreso el usuario devolver un 
+  mensaje si la persona es mayor de edad o no. Utilizar para la condición el operador ternario. 
 */
 
 let edad = 21;
-
+/* Funcion que verifica si el usuario es  mayor de edad */
 function verificarEdad(edad) {
   let mensaje = edad >= 18 ? "Sos mayor de edad" : "No sos mayor de edad";
   return mensaje;
@@ -18,7 +20,8 @@ function verificarEdad(edad) {
 console.log(verificarEdad(edad));
 
 /*
-EJERCICIO 2\
+EJERCICIO 2:
+Crear una función que determine la nota final de un alumno.
 */
 
 let alumno = {
@@ -30,6 +33,7 @@ let alumno = {
   investigacion: 10,
 };
 
+/* Funcion que da la nota final de un estudiante */
 function notaFinal(alumno) {
   let nota =
     alumno.examen * 0.2 +
@@ -46,7 +50,11 @@ console.log(notaFinal(alumno));
 
 //========================================================
 
-/*Ejercicio 3*/
+/*Ejercicio 3:
+Calcular el aumento de trabajador tomando en cuenta la tabla de categorías de aumento. 
+Para este ejercicio deberá de asignar las siguientes variables: nombre, salario, categoría y 
+aumento. Deberá demostrar los datos del empleado y el aumento salarial. 
+*/
 
 //Variables con los datos del empleado
 let nombre = "Juan";
@@ -102,11 +110,14 @@ console.log(calcularAumento(nombre, salario, categoria, aumento));
 
 /* 
 EJERCICIO 4: 
+Crear una función que en base a 2 números enteros, 
+calcule cual número es el mayor y devolverlo.
 */
 
 let num1 = 10,
   num2 = 5;
 
+  /* Funcion que evalua el numero mayor de dos pasados */
 function evalMayorNumero(value1, value2) {
   let mensaje;
   if (value1 >= value2) {
@@ -122,7 +133,11 @@ function evalMayorNumero(value1, value2) {
 console.log(evalMayorNumero(num1, num2));
 
 /* 
-EJERCICIO 5:  
+EJERCICIO 5: 
+Realizar una función para una tienda de coches en donde se deberá calcular: 
+Si el coche a la venta es un FORD FIESTA, aplicar un 5% de descuento en la compra. Si el 
+coche a la venta es un FORD FOCUS, el descuento será del 10% y si es un FORD ESCAPE 
+el descuento será del 20% 
 */
 
 let autos = [
@@ -132,7 +147,7 @@ let autos = [
 ];
 
 let autoSeleccion = " ford escape";
-
+/* Funcion que calcula el descuento segun la marca del vehiculo */
 function tiendaCoches(autos) {
   let mensaje;
   let descuentoAplicado;
@@ -154,12 +169,17 @@ function tiendaCoches(autos) {
 console.log(tiendaCoches(autos));
 
 /*
-EJERCICIO 6:   
+EJERCICIO 6: 
+Crear una Función para calcular el descuento en viajes turísticos tomando 
+en cuenta lo siguiente:  
+Si el usuario introduce como origen la ciudad de Palma y como destino La costa del Sol, el 
+descuento será de 5%, si el destino es Panchimalco el descuento será del 10% y si el destino 
+es Puerto el Triunfo el descuento será del 15%  
  */
 
 let ciudadOrigen = "Ciudad de la Palma";
 let destino = "Costa del sol";
-
+/* Esta funcion evalua los descuentos segun el origen y el destino del usuario */
 function descuentoViajesTuristico(ciudadOrigen, destino) {
   if (ciudadOrigen == "Ciudad de la Palma") {
     if (destino.toLowerCase() === "Costa del sol".toLowerCase()) {
@@ -194,7 +214,11 @@ console.log(descuentoViajesTuristico(ciudadOrigen, destino));
 
 /* 
 EJERCICIO 7:  
-
+Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:  
+• La cantidad de valores negativos ingresados. 
+• La cantidad de valores positivos ingresados. 
+• La cantidad de múltiplos de 15. 
+• El valor acumulado de los números ingresados que son pares.
 */
 
 let valoresEnteros = [20, -10, 4, -6, 1, 2, 98, 30, -9, 15];
@@ -216,7 +240,8 @@ console.log(resultadoMultiple);
 /* 
 
 EJERCICIO 8:  
- 
+ Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado 
+por el usuario. 
 */
 
 let numeroUsuarioTabla = 5;
@@ -233,7 +258,12 @@ for (i; i <= 10; i++) {
 
 /* 
   EJERCICIO 9:  
-  
+  Crear programa donde se introduce una temperatura en Celsius y salga el resultado en 
+Fahrenheit, una vez teniendo la temperatura en Fahrenheit deberá devolver lo siguiente: 
+• Si ºF está entre 14 y 32, sale la frase “Temperatura baja” 
+• Si ºF está entre 32 y 68, sale la frase “Temperatura adecuada” 
+• Si ºF está entre 68 y 96, sale la frase “Temperatura alta” 
+• Si no está entre ningún caso anterior la frase “Temperatura desconocida” 
   */
 
 let Celsius = 20;
@@ -260,27 +290,44 @@ conversorAFarenheit(Celsius);
 /* 
 EJERCICIO 10:  
 
-
+Se cuenta con la siguiente información:  
+• Las edades de 5 estudiantes del turno mañana.  
+• Las edades de 6 estudiantes del turno tarde.  
+• Las edades de 11 estudiantes del turno noche.
 */
 let edadesTurnoPrimero = [9, 10, 7, 12, 11];
-let edadesTurnoSegundo = [7, 11, 8, 11, 13,9];
-let edadesTurnoTercero = [9, 10, 12, 13, 13,10,15,18,9,10,8];
-
+let edadesTurnoSegundo = [7, 11, 8, 11, 13, 9];
+let edadesTurnoTercero = [9, 10, 12, 13, 13, 10, 15, 18, 9, 10, 8];
 
 /* La funcion devuelve una cadena de texto
    con la evaluacion de los promedios de edades por turnos
    y el turno con el maximo de edad */
-function promediosPorTurnos(edadesTurnoPrimero, edadesTurnoSegundo, edadesTurnoTercero){
+function promediosPorTurnos(
+  edadesTurnoPrimero,
+  edadesTurnoSegundo,
+  edadesTurnoTercero
+) {
+  let sumaPrimerTurno = edadesTurnoPrimero.reduce(
+    (acumulador, actual) => (acumulador += actual)
+  );
+  let sumaSegundoTurno = edadesTurnoSegundo.reduce(
+    (accumulador, actual) => (accumulador += actual)
+  );
+  let sumaTerceroTurno = edadesTurnoTercero.reduce(
+    (acumulador, actual) => (acumulador += actual)
+  );
 
-  let sumaPrimerTurno  = edadesTurnoPrimero.reduce( (acumulador, actual) => acumulador += actual);
-  let sumaSegundoTurno = edadesTurnoSegundo.reduce( (accumulador, actual) => accumulador+=actual);
-  let sumaTerceroTurno = edadesTurnoTercero.reduce( (acumulador, actual) => acumulador += actual);
-  
-  let promedioPrimerTurno = Math.round(sumaPrimerTurno / edadesTurnoPrimero.length);
-  let promedioSegundoTurno = Math.round(sumaSegundoTurno / edadesTurnoSegundo.length);
-  let promdioTercerTurno = Math.round(sumaTerceroTurno / edadesTurnoTercero.length);
+  let promedioPrimerTurno = Math.round(
+    sumaPrimerTurno / edadesTurnoPrimero.length
+  );
+  let promedioSegundoTurno = Math.round(
+    sumaSegundoTurno / edadesTurnoSegundo.length
+  );
+  let promdioTercerTurno = Math.round(
+    sumaTerceroTurno / edadesTurnoTercero.length
+  );
 
-  let turnoMayorPromedio="";
+  let turnoMayorPromedio = "";
   let edadPromedio = "";
 
   /*  Esta logica del la estructura condicional se puede mejorar.
@@ -289,16 +336,22 @@ function promediosPorTurnos(edadesTurnoPrimero, edadesTurnoSegundo, edadesTurnoT
 
       Otra opcion seria usar if anidados para este mismo fin.
    */
-  if (promedioPrimerTurno > promedioSegundoTurno || promedioPrimerTurno > promdioTercerTurno){
+  if (
+    promedioPrimerTurno > promedioSegundoTurno ||
+    promedioPrimerTurno > promdioTercerTurno
+  ) {
+
     turnoMayorPromedio = "Mañana";
     edadPromedio = promedioPrimerTurno;
-  }else if (promedioSegundoTurno > promdioTercerTurno || promedioSegundoTurno > promedioPrimerTurno){
+  } else if (
+    promedioSegundoTurno > promdioTercerTurno ||
+    promedioSegundoTurno > promedioPrimerTurno
+  ) {
     turnoMayorPromedio = "Tarde";
     edadPromedio = promedioSegundoTurno;
-  }else {
+  } else {
     turnoMayorPromedio = "Noche";
     edadPromedio = promdioTercerTurno;
-
   }
 
   let mostrarPromediosTurnos = `\n \t Promedios por turnos\n 
@@ -307,8 +360,9 @@ function promediosPorTurnos(edadesTurnoPrimero, edadesTurnoSegundo, edadesTurnoT
                               Turno de noche: ${promdioTercerTurno}\n
                               Turno con mayoria de edad: ${turnoMayorPromedio}, con un promedio de edad de: ${edadPromedio} años`;
 
-  return mostrarPromediosTurnos;                            
+  return mostrarPromediosTurnos;
 }
 
-console.log(promediosPorTurnos(edadesTurnoPrimero, edadesTurnoSegundo, edadesTurnoTercero));
-
+console.log(
+  promediosPorTurnos(edadesTurnoPrimero, edadesTurnoSegundo, edadesTurnoTercero)
+);
