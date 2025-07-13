@@ -117,13 +117,15 @@ calcule cual número es el mayor y devolverlo.
 let num1 = 10,
   num2 = 5;
 
-  /* Funcion que evalua el numero mayor de dos pasados */
+/* Funcion que evalua el numero mayor de dos pasados */
 function evalMayorNumero(value1, value2) {
   let mensaje;
-  if (value1 >= value2) {
+  if (value1 > value2) {
     mensaje = `El ${value1} es mayor que ${value2}`;
-  } else if (value1 <= value2) {
+  } else if (value1 < value2) {
     mensaje = `El numero ${value2} es mayor que ${value1}`;
+  } else if (value2 == value1) {
+    mensaje = "Son iguales";
   } else {
     mensaje = `Solicitud no valida!!`;
   }
@@ -340,7 +342,6 @@ function promediosPorTurnos(
     promedioPrimerTurno > promedioSegundoTurno ||
     promedioPrimerTurno > promdioTercerTurno
   ) {
-
     turnoMayorPromedio = "Mañana";
     edadPromedio = promedioPrimerTurno;
   } else if (
