@@ -1,0 +1,28 @@
+*{
+    --fondo-primario : #5d5750;
+    --color-secundario : #5833af76;
+}
+
+.color-fondo-primario{
+    background-color: #1b263b;
+}
+.color-fondo-secundario{
+    background-color: var(--color-secundario);
+}
+
+.texto-primario{
+    color: #bc6c25;
+}
+
+.border-styled{
+    border: #bc6c25 solid .5em;
+}
+
+input{
+    background-color: rgba(234, 223, 169, 0.383);
+    border: none;
+    outline: #dda15e;
+    outline-style: none;
+    font-size: 1em;
+    padding: .5em;
+} 
