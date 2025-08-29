@@ -18,7 +18,7 @@
     border: #bc6c25 solid .5em;
 }
 
-/* Add to your CSS */
+
 .card i {
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
@@ -50,5 +50,9 @@ input{
     .movil-player{
         position:fixed;
         bottom: 0px;
+    }
+
+    .formulario{
+        margin: 1.5em;
     }
 }
