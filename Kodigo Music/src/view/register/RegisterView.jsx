@@ -1,10 +1,23 @@
+import { yupResolver } from '@hookform/resolvers/yup'
 import './register.css'
 import {useForm} from 'react-hook-form'
 import * as yup from 'yup'
 
+
 export const RegisterView = () => {
+
+    const schema = yup.object({
+        usuario: yup.string(),
+        email: yup.string().matches(/[@]/, "No valid mail")
+    })
     
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit} = useForm({
+        resolver:yupResolver(schema)
+    });
+
+    const onSubmit = data => {
+        console.log(data)
+    }
   return (
     <>
         <div className="wrap-form-container row">
@@ -15,7 +28,7 @@ export const RegisterView = () => {
             </section>
             <section className='col-lg-4 col-md-4 col-sm-12'>
                
-                <form onSubmit={handleSubmit(data => alert(JSON.stringify(data)))} 
+                <form onSubmit={handleSubmit(onSubmit)} 
                     className='form h-75 p-3 color-fondo-secundario rounded text-light'>
                      <h1 className='text-center fw-bolder fs-1 text-light'>Register</h1>
                     <label htmlFor="" className='form-label'>Usuario</label>
