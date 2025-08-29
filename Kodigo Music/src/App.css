@@ -1,6 +1,8 @@
 *{
     --fondo-primario : #5d5750;
     --color-secundario : #5833af76;
+    margin: 0;
+    padding: 0;
 }
 
 .color-fondo-primario{
@@ -42,6 +44,10 @@ input{
     padding: .5em;
 } 
 
+/* En pantallas grandes no mostrar el icono de usuario */
+.movil-see{
+    visibility: hidden;
+}
 
 @media (max-width:1000px){
     .movil{
@@ -50,6 +56,11 @@ input{
     .movil-player{
         position:fixed;
         bottom: 0px;
+    }
+
+    /*  */
+    .movil-see{
+        visibility: visible;
     }
 
     .formulario{
