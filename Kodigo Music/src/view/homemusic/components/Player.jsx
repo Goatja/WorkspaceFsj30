@@ -7,7 +7,7 @@ export const Player = () => {
 
   return (
     <>
-        <div className="container-fluid d-flex justify-content-around text-light bg-dark shadow" style={{height:'15dvh', width:'100vw'}}>
+        <div className="movil-player container-fluid d-flex justify-content-around text-light bg-dark shadow" style={{height:'15dvh', width:'100vw'}}>
             <section className="icons1 w-25 h-100">
             
             </section>

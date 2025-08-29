@@ -7,19 +7,21 @@ import { SideBar } from "./components/SideBar";
 export const HomeMusic = () => {
   return (
     <>
-      <main className="row color-fondo-primario" style={{width:'100vw', height:'85dvh'}}>
-        <section className="movil col-lg-2 col-md-4 col-sm-12 h-100">
+      <main className="color-fondo-primario d-block" style={{width:'100vw', height:'100dvh'}}>
+        <article className="row">
+          <section className="movil col-lg-2 col-md-4 h-100">
             <SideBar />
-        </section>
-        <section className="col-md-12 col-lg-10 col-sm-12">
+          </section>
+          <section className="col-md-12 col-lg-10 col-sm-12">
             <NavBar />
             <ListMusic />
-        </section>
+          </section>
+        </article>
 
+        <footer className="position-fixed bottom-0">
+          <Player />
+        </footer>
       </main>
-      <footer>
-            <Player />
-      </footer>
     </>
   );
 };
