@@ -8,10 +8,10 @@ export const HomeMusic = () => {
   return (
     <>
       <main className="row color-fondo-primario" style={{width:'100vw', height:'85dvh'}}>
-        <section className="col-lg-2 h-100">
+        <section className="movil col-lg-2 col-md-4 col-sm-12 h-100">
             <SideBar />
         </section>
-        <section className="col-md-10">
+        <section className="col-md-12 col-lg-10 col-sm-12">
             <NavBar />
             <ListMusic />
         </section>
