@@ -7,7 +7,7 @@ export const SideBar = () => {
         <i title="Home" className="bi bi-vinyl fs-4 text-light m-2"></i>
         <i className="bi bi-music-note-list fs-4 text-light"></i>
       <section className="h-75 d-flex align-items-end">
-       <i title="Settings" class="bi bi-gear fs-3 text-light"></i>
+       <i title="Settings" className="bi bi-gear fs-3 text-light"></i>
       </section>
     </div>
   )

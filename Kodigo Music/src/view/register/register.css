@@ -1,8 +1,21 @@
 .wrap-form-container{
-    width: 100vw;
-    height: 100dvh;
     background: url(https://img.freepik.com/fotos-premium/fondo-formularios-digitales-abstractos-forma-trapcode-puntos-lineas-brillantes-fondo_799261-292.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+.shadow-sm {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.bg-dark {
+  background-color: #1c2541 !important;
+}
+
+.btn-info {
+  background-color: #3a506b;
+  border: none;
+}
+
+
