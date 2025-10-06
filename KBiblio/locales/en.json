@@ -1,0 +1,23 @@
+{
+    "kbiblio": "Bibliotecnologica",
+    "my_personal_library": "My Personal Library",
+    "add_new_book": "Add a New Book",
+    "title": "Title",
+    "author": "Author",
+    "category": "Category",
+    "add_book": "Add Book",
+    "search": "Search",
+    "search_by_title": "Title",
+    "search_by_author": "Author",
+    "search_by_category": "Category",
+    "search_by_other": "Other",
+    "search_by": "Search by",
+    "search_placeholder": "Search...",
+    "reset_library": "Reset Library",
+    "clear_search": "Clear Search",
+    "books": "Books",
+    "no_books_found": "No books found.",
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete"
+}

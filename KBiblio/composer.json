@@ -1,0 +1,16 @@
+{
+    "name": "kbiblio/kbiblio",
+    "description": "A simple library management system.",
+    "autoload": {
+        "psr-4": {
+            "KBiblio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "FSJ30",
+            "email": "fsj30@example.com"
+        }
+    ],
+    "require": {}
+}
